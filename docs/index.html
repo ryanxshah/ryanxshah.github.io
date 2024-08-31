@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+      ryan shah
+    </title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+      
+      html {
+        scroll-behavior: smooth;
+      }
+    
+
+      .content {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .navbar {
+        background-color: rgba(35,35,35,1);
+        overflow: hidden; /* Hide any overflow content */
+        border-radius: 5px;
+      
+      }
+
+      .navbar a {
+        float: left; /* Float the links to the left */
+        display: block; /* Make the links block elements */
+        color: white; /* Set the text color */
+        text-align: center; /* Center the text */
+        padding: 25px 16px; /* Add some padding to the links */
+        text-decoration: none; /* Remove the underline */
+        font-size: 20px;
+      }
+
+      .bio-heading {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .bio-text {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        background-: rgba(95, 95, 95, 0.1);
+
+        border-radius: 5px;
+        padding: 15px;
+      }
+
+      .projects-heading {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .projects-grid {
+        display: grid;
+        gap: 2%;
+        grid-template-columns: 47% 47%;
+        grid-template-rows: 300px;
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: larger;
+      }
+
+      .proj1 {
+        padding: 10px 15px;
+        background-image: url("https://images.unsplash.com/photo-1592495989226-03f88104f8cc?q=80&w=2412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+
+        color: black;
+        text-decoration:none;
+
+        transition: 0.5s;
+      }
+
+      .proj1:hover {
+        opacity: 0.25;
+      }
+
+      .proj2 {
+        padding: 10px 15px;
+        background-image: url("https://images.unsplash.com/photo-1638805316657-6a06cc5ce8a2?q=80&w=4470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-position: center;
+        background-size:cover;
+        border-radius: 5px;
+
+        color: white;
+        text-decoration:none;
+
+        transition: 0.5s;
+      } 
+
+      .proj2:hover {
+        opacity: 0.25;
+      }
+
+      .proj1-heading {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+      }
+
+      .proj1-desc {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(95, 95, 95, 0.1);
+        color: black;
+        border-radius: 5px;
+        padding: 15px;
+      }
+
+      .proj1-link {
+        text-decoration: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: rgb(16, 79, 97);
+        font-size: 20px;
+        transition: 0.5s;
+      }
+
+      .proj1-link:hover {
+        color: rgb(69, 162, 187);
+      }
+
+      .proj2-heading {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+      }
+
+      .proj2-desc {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(95, 95, 95, 0.1);
+        color: black;
+        border-radius: 5px;
+        padding: 15px;
+      }
+
+      .proj2-link {
+        text-decoration: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: rgb(16, 79, 97);
+        font-size: 20px;
+        transition: 0.5s;
+      }
+
+      .proj2-link:hover {
+        color: rgb(69, 162, 187);
+      }
+
+      .back {
+        display: block;
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-decoration: none;
+        color: rgba(95, 95, 95, 1);
+        padding: 20px;
+        transition: 0.5s;
+      }
+
+      .back:hover {
+        color: black;
+      }
+
+
+      /* Style for icon links on the right */
+      .icon-link {
+        float: right; /* Float the icon links to the right */
+        padding: 25px 16px;
+      }
+
+      /* Adjust the icon size as needed */
+      .icon-link i {
+        font-size: 24px;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="content">
+
+      <div class="navbar" id="navbar">
+        <a>ryan shah.</a>
+      </div>
+  
+      <div class="bio" id="bio">
+        <h1 class="bio-heading">
+          hey! i'm ryan.
+        </h1>
+        <p class="bio-text">
+          I am a current Master's student at UT Austin pursuing an MS in Data Science, and a recent Data Science graduate from UC Berkeley. I'm actively seeking opportunities to apply my knowledge, skills, and passion for data science in a professional setting and am eager to contribute to cutting-edge projects and leverage data-driven insights to solve complex problems.<br><br>Check out my projects below!</p>
+        </p>
+
+      </div>
+
+      <div class="projects">
+
+        <h1 class="projects-heading">
+          projects
+        </h1>
+
+        <div class="projects-grid">
+          <a href="https://startupprofitpredictor.streamlit.app/" class="proj1">startup profit predictor</a>
+          <a href="https://playlistr-app-production.up.railway.app" class="proj2">playlistr (k-means spotify playlist organizer)</a>
+
+
+        </div>
+
+      </div>
+  
+
+    </div>
+  </body>
+
+</html>
