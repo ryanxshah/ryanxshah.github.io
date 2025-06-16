@@ -62,8 +62,8 @@
       .projects-grid {
         display: grid;
         gap: 2%;
-        grid-template-columns: 32% 32% 32%;
-        grid-template-rows: 300px;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-template-rows: 350px;
         max-width: 950px;
         margin-left: auto;
         margin-right: auto;
@@ -72,7 +72,7 @@
 
       .proj1 {
         padding: 10px 15px;
-        background-image: url("https://images.unsplash.com/photo-1592495989226-03f88104f8cc?q=80&w=2412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-image: url("https://images.unsplash.com/photo-1709651669999-57741c9bf085?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         background-position: center;
         background-size: cover;
         border-radius: 5px;
@@ -89,6 +89,23 @@
 
       .proj2 {
         padding: 10px 15px;
+        background-image: url("https://images.unsplash.com/photo-1500496733680-167c3db69389?q=80&w=2049&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-position: center;
+        background-size:cover;
+        border-radius: 5px;
+
+        color: black;
+        text-decoration:none;
+
+        transition: 0.5s;
+      } 
+
+      .proj2:hover {
+        opacity: 0.25;
+      }
+
+      .proj3 {
+        padding: 10px 15px;
         background-image: url("https://images.unsplash.com/photo-1638805316657-6a06cc5ce8a2?q=80&w=4470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         background-position: center;
         background-size:cover;
@@ -100,11 +117,11 @@
         transition: 0.5s;
       } 
 
-      .proj2:hover {
+      .proj3:hover {
         opacity: 0.25;
       }
 
-      .proj3 {
+      .proj4 {
         padding: 10px 15px;
         background-image: url("https://images.unsplash.com/photo-1610019080778-471083eb5965?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         background-position: center;
@@ -117,7 +134,7 @@
         transition: 0.5s;
       } 
 
-      .proj3:hover {
+      .proj4:hover {
         opacity: 0.25;
       }
 
@@ -217,6 +234,38 @@
         color: rgb(69, 162, 187);
       }
 
+      .proj4-heading {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+      }
+
+      .proj4-desc {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(95, 95, 95, 0.1);
+        color: black;
+        border-radius: 5px;
+        padding: 15px;
+      }
+
+      .proj4-link {
+        text-decoration: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: rgb(16, 79, 97);
+        font-size: 20px;
+        transition: 0.5s;
+      }
+
+      .proj4-link:hover {
+        color: rgb(69, 162, 187);
+      }
+
       .back {
         display: block;
         max-width: 950px;
@@ -274,9 +323,10 @@
         </h1>
 
         <div class="projects-grid">
-          <a href="https://startupprofitpredictor.streamlit.app/" class="proj1">startup profit predictor</a>
-          <a href="https://playlistr-app-production.up.railway.app" class="proj2">playlistr (k-means spotify playlist organizer)</a>
-          <a href="https://github.com/ryanxshah/self-driving-car/tree/main" class="proj3">autonomous car - deep learning / computer vision</a>
+          <a href="https://unit-conversion-llm.streamlit.app/" class="proj1">finetuned llm for unit conversion</a>
+          <a href="https://startupprofitpredictor.streamlit.app/" class="proj2">startup profit predictor</a>
+          <a href="https://playlistr-app-production.up.railway.app" class="proj3">playlistr (k-means spotify playlist organizer)</a>
+          <a href="https://github.com/ryanxshah/self-driving-car/tree/main" class="proj4">autonomous car - deep learning / computer vision</a>
 
 
         </div>
