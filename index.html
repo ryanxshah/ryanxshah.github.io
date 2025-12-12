@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ryan shah</title>
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.typekit.net/vyf6nqz.css">
+
+
+        <style>
+            body {
+                background-color: #f5f5f5;
+                font-family: "Montserrat";
+                color: #151515;
+            }
+
+            .page-container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .projects-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 01fr));
+                gap: 20px;
+            }
+
+            .page-header {
+                font-family: "Bebas-Kai";
+                color: orangered;
+                text-align: center;
+            }
+
+            .projects-header {
+                font-family: "Bebas-Kai";
+                color: orangered;
+                text-align: center;
+            }
+
+            .introduction {
+                font-family: "Montserrat";
+                text-align: center;
+                padding-left: 100px;
+                padding-right: 100px;
+                font-size: 20px;
+            }
+
+            .projects-section {
+                margin-top: 50px;
+            }
+
+            .projects-grid a {
+                position: relative;
+                display: block;
+                aspect-ratio: 1 / 1;
+                background-size: cover;
+                background-position: center;
+                border-radius: 5px;
+                text-decoration: none;
+                overflow: hidden;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            .text-overlay {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                color: #f5f5f5;
+            }
+
+            .text-overlay .title {
+                display: block;
+                font-family: "Bebas-Kai";
+                font-size: 28px;
+                margin-bottom: 5px;
+            }
+
+            .text-overlay .subtitle {
+                display: block;
+                font-family: "Montserrat";
+                font-weight: 300;
+            }
+
+            .projects-grid a:hover {
+                transform: scale(1.03);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            }
+
+            .minigpt {
+                background-image: url("assets/projects_background.jpg");
+            }
+
+            .minilora {
+                background-image: url("assets/projects_background.jpg");
+            }
+
+            .llm-finetuner {
+                background-image: url("assets/projects_background.jpg");
+            }
+
+            .autonomous-car {
+                background-image: url("assets/projects_background.jpg");
+            }
+
+            .playlistr {
+                background-image: url("assets/projects_background.jpg");
+            }
+
+            .profit-predictor {
+                background-image: url("assets/projects_background.jpg");
+            }
+
+            .page-footer {
+                font-family: "Bebas-Kai";
+                margin-top: 50px;
+                text-align: center;
+            }
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <div class="page-container">
+            <h1 class="page-header">
+                ryan shah
+            </h1>
+
+            <p class="introduction">
+                hey, i'm ryan. i'm a recent master's graduate from 
+                UT Austin and a data science graduate from UC Berkeley. 
+                i'm seeking professional roles in AI/ML. my current personal 
+                interests are in large language modeling and agentic AI. 
+                check out my projects below!
+            </p>
+
+            <div class="projects-section">
+                <h2 class="projects-header">projects</h2>
+                <div class="projects-grid">
+
+                    <a href="https://github.com/ryanxshah/miniGPT" class="minigpt">
+                        <div class="text-overlay">
+                            <span class="title">miniGPT</span>
+                            <span class="subtitle">custom GPT model for character-level text generation</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/ryanxshah/miniLoRA" class="minilora">
+                        <div class="text-overlay">
+                            <span class="title">miniLoRA</span>
+                            <span class="subtitle">LoRA framework for parameter-efficient fine-tuning of PyTorch models</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/ryanxshah/llm-finetuner" class="llm-finetuner">
+                        <div class="text-overlay">
+                            <span class="title">llm finetuner</span>
+                            <span class="subtitle">reusable LLM fine-tuning pipeline</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/ryanxshah/autonomous-car" class="autonomous-car">
+                        <div class="text-overlay">
+                            <span class="title">Autonomous Car</span>
+                            <span class="subtitle">transformer-based vision model</span>
+                        </div>
+                    </a>
+
+                    <a href="https://playlistr-app-production.up.railway.app/" class="playlistr">
+                        <div class="text-overlay">
+                            <span class="title">playlistr</span>
+                            <span class="subtitle">k-means spotify organizer</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://startupprofitpredictor.streamlit.app/" class="profit-predictor">
+                        <div class="text-overlay">
+                            <span class="title">profit predictor</span>
+                            <span class="subtitle">linear regression model</span>
+                        </div>
+                    </a>
+
+                </div>
+                
+            </div>
+            <p class="page-footer">ryan shah, 2025</p>
+        </div>
+
+    </body>
+    
+</html>
