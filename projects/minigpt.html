@@ -223,8 +223,8 @@
                 <p class="hero-eyebrow">Project</p>
                 <h1 class="page-header">miniGPT</h1>
                 <p class="introduction">
-                    a GPT language model built from scratch in PyTorch.
-                    trained on plain text to generate new characters one at a time,
+                    A GPT language model built from scratch in PyTorch.
+                    Trained on plain text to generate new characters one at a time,
                     following the patterns and style of whatever it was trained on.
                 </p>
                 <div class="hero-links">
@@ -241,7 +241,7 @@
                     "Attention is All You Need" - multi-head self-attention, positional
                     embeddings, feed-forward layers, and layer normalization - all wired
                     together from scratch without using any high-level model libraries.
-                    the goal was to deeply understand how GPT-style models work by
+                    The goal was to deeply understand how GPT-style models work by
                     building each component by hand.
                 </p>
             </div>
@@ -249,10 +249,10 @@
             <div class="section">
                 <p class="section-label">How it works</p>
                 <p class="section-body">
-                    the model reads a corpus of text and learns a mapping from sequences
-                    of characters to the next likely character. at inference time, it
+                    The model reads a corpus of text or any other sequential data and learns a mapping from sequences
+                    of characters to the next likely character. At inference time, it
                     samples from this distribution autoregressively - each new character
-                    is fed back in as input to generate the next one. training uses
+                    is fed back in as input to generate the next one. Training uses
                     cross-entropy loss and the AdamW optimizer.
                 </p>
             </div>

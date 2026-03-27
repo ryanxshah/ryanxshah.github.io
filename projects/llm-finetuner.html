@@ -238,7 +238,7 @@
                 <p class="section-label">Overview</p>
                 <p class="section-body">
                     LLM Finetuner is a modular pipeline designed to take the friction
-                    out of fine-tuning. rather than writing custom training loops for
+                    out of fine-tuning. Rather than writing custom training loops for
                     each new project, the pipeline provides a consistent interface for
                     loading a model, preparing a dataset, running training, and saving
                     the result - so the focus stays on the task, not the boilerplate.
@@ -248,12 +248,17 @@
             <div class="section">
                 <p class="section-label">How it works</p>
                 <p class="section-body">
-                    the pipeline loads a pre-trained model and tokenizer, formats the
-                    training data into the expected input structure, and runs a standard
-                    supervised fine-tuning loop. training hyperparameters like learning
-                    rate, batch size, and number of epochs are configurable. once
-                    training is complete, the fine-tuned weights are saved and ready
-                    for inference.
+                    This pipeline consists of multiple fine-tuning techniques, including 
+                    chain-of-thought prompting, supervised learning, and rejection sampling. 
+                    Given a fine-tuning dataset, this strategy enables continual improvement 
+                    of the base model by iteratively refining its reasoning and response 
+                    quality. Chain-of-thought prompting teaches the model to reason through 
+                    its answers step-by-step while rejection sampling ensures that only 
+                    high-quality responses based on human judgement are used for further training. 
+                    Because the pipeline supports resampling, we can continually enhance the 
+                    dataset and model performance by simply modifying the chain-of-thought 
+                    prompt. This allows the model to develop more sophisticated reasoning abilities 
+                    over time without requiring new datasets or changes to the model architecture.
                 </p>
             </div>
 
@@ -262,9 +267,9 @@
                 <div class="tech-list">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">PyTorch</span>
-                    <span class="tech-tag">Hugging Face</span>
-                    <span class="tech-tag">Transformers</span>
-                    <span class="tech-tag">Fine-Tuning</span>
+                    <span class="tech-tag">Chain-of-Thought Prompting</span>
+                    <span class="tech-tag">Supervised Fine-Tuning</span>
+                    <span class="tech-tag">Rejection Sampling</span>
                 </div>
             </div>
 

@@ -183,9 +183,9 @@
                 <p class="hero-eyebrow">Project</p>
                 <h1 class="page-header">Autonomous Car</h1>
                 <p class="introduction">
-                    a self-driving car model built on a transformer-based vision
-                    architecture. trained to predict steering decisions directly
-                    from camera input.
+                    Trained a virtual car to navigate tracks using three model
+                    architectures - a Perceiver-based transformer, a CNN, and an MLP -
+                    achieving 100% track completion with the best model.
                 </p>
                 <div class="hero-links">
                     <a href="https://github.com/ryanxshah/autonomous-car" class="hero-link hero-link-primary">↗ GitHub Repo</a>
@@ -197,22 +197,24 @@
             <div class="section">
                 <p class="section-label">Overview</p>
                 <p class="section-body">
-                    this project applies transformer-based vision models to the
-                    autonomous driving problem. rather than relying on hand-crafted
-                    rules or sensor fusion pipelines, the model learns to map raw
-                    image frames directly to driving decisions - treating steering
-                    as a sequence prediction task over visual tokens.
+                    This project explores autonomous driving through three different
+                    model architectures. The primary model is a transformer planner
+                    based on the Perceiver architecture, which predicts waypoints from
+                    lane boundary inputs to steer the car around a track. A CNN planner
+                    and MLP planner were also built to benchmark against the transformer.
+                    The best model achieved 90% track coverage and 100% track completion.
                 </p>
             </div>
 
             <div class="section">
                 <p class="section-label">How it works</p>
                 <p class="section-body">
-                    input frames are tokenized and passed through a vision transformer
-                    that extracts spatial features from the image. these features are
-                    used to predict the steering angle at each timestep. the model is
-                    trained on recorded driving data using supervised learning, minimizing
-                    the difference between predicted and actual steering values.
+                    Each model takes lane boundary data as input and outputs a sequence
+                    of waypoints for the car to follow. The transformer planner uses the
+                    Perceiver architecture to attend over the input and predict waypoints
+                    directly. All three models were trained end-to-end in PyTorch with a
+                    custom training pipeline, and hyperparameters were tuned to improve
+                    accuracy and training efficiency.
                 </p>
             </div>
 
@@ -221,9 +223,9 @@
                 <div class="tech-list">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">PyTorch</span>
-                    <span class="tech-tag">Vision Transformer</span>
                     <span class="tech-tag">Computer Vision</span>
-                    <span class="tech-tag">Supervised Learning</span>
+                    <span class="tech-tag">Convolutional Neural Networks</span>
+                    <span class="tech-tag">Transformers</span>
                 </div>
             </div>
 
