@@ -188,7 +188,23 @@
                 color: rgba(0, 0, 0, 0.3);
                 text-transform: uppercase;
             }
+
+            @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+            body { animation: fadeIn 0.3s ease; }
         </style>
+
+        <script>
+            document.addEventListener('click', function(e) {
+                const link = e.target.closest('a[href]');
+                if (!link) return;
+                const href = link.getAttribute('href');
+                if (!href || href.startsWith('http') || href.startsWith('#')) return;
+                e.preventDefault();
+                document.body.style.transition = 'opacity 0.25s ease';
+                document.body.style.opacity = '0';
+                setTimeout(() => { window.location.href = href; }, 250);
+            });
+        </script>
     </head>
 
     <body>
@@ -200,11 +216,11 @@
                     ryan shah
                 </h1>
                 <p class="introduction">
-                    i'm a recent master's graduate from 
+                    I'm a recent master's graduate from 
                     UT Austin and a data science graduate from UC Berkeley. 
-                    i'm seeking professional roles in AI/ML. my current personal 
+                    I'm seeking professional roles in AI/ML. My current personal 
                     interests are in transformer-based modeling and agentic AI. 
-                    check out my projects below!
+                    Check out my projects below!
                 </p>
             </div>
 
@@ -215,7 +231,7 @@
 
             <div class="projects-grid">
 
-                <a href="https://github.com/ryanxshah/miniGPT" class="project-card">
+                <a href="projects/minigpt.html" class="project-card">
                     <div class="card-bg" style="background: linear-gradient(135deg, #FF4500, #ff8458)"></div>
                     <div class="card-content">
                         <div class="card-top">
@@ -229,7 +245,7 @@
                 </a>
 
 
-                <a href="https://github.com/ryanxshah/miniLoRA" class="project-card">
+                <a href="projects/minilora.html" class="project-card">
                     <div class="card-bg" style="background: linear-gradient(135deg, #FF4500, #ff8458)"></div>
                     <div class="card-content">
                         <div class="card-top">
@@ -242,7 +258,7 @@
                     </div>
                 </a>
 
-                <a href="https://github.com/ryanxshah/llm-finetuner" class="project-card">
+                <a href="projects/llm-finetuner.html" class="project-card">
                     <div class="card-bg" style="background: linear-gradient(135deg, #FF4500, #ff8458)"></div>
                     <div class="card-content">
                         <div class="card-top">
@@ -255,7 +271,7 @@
                     </div>
                 </a>
 
-                <a href="https://github.com/ryanxshah/autonomous-car" class="project-card">
+                <a href="projects/autonomous-car.html" class="project-card">
                     <div class="card-bg" style="background: linear-gradient(135deg, #FF4500, #ff8458)"></div>
                     <div class="card-content">
                         <div class="card-top">
@@ -268,7 +284,7 @@
                     </div>
                 </a>
 
-                <a href="https://playlistr-app-production.up.railway.app/" class="project-card">
+                <a href="projects/playlistr.html" class="project-card">
                     <div class="card-bg" style="background: linear-gradient(135deg, #FF4500, #ff8458)"></div>
                     <div class="card-content">
                         <div class="card-top">
@@ -281,7 +297,7 @@
                     </div>
                 </a>
 
-                <a href="https://startupprofitpredictor.streamlit.app/" class="project-card">
+                <a href="projects/profit-predictor.html" class="project-card">
                     <div class="card-bg" style="background: linear-gradient(135deg, #FF4500, #ff8458)"></div>
                     <div class="card-content">
                         <div class="card-top">
