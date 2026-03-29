@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ryan shah</title>
         <link rel="icon" type="image/png" href="assets/favicon.png">
 
@@ -191,6 +192,45 @@
 
             @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
             body { animation: fadeIn 0.3s ease; }
+
+            /* ── Tablet ── */
+            @media (max-width: 750px) {
+                .projects-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            /* ── Mobile ── */
+            @media (max-width: 500px) {
+                .page-container {
+                    padding: 60px 20px 50px;
+                }
+
+                .hero {
+                    margin-bottom: 48px;
+                }
+
+                .page-header {
+                    font-size: 36px;
+                }
+
+                .introduction {
+                    max-width: 100%;
+                    font-size: 14px;
+                }
+
+                .projects-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .project-card {
+                    min-height: 160px;
+                }
+
+                .page-footer {
+                    margin-top: 48px;
+                }
+            }
         </style>
 
         <script>
@@ -219,10 +259,10 @@
                     ryan shah
                 </h1>
                 <p class="introduction">
-                    I'm a recent master's graduate from 
-                    UT Austin and a data science graduate from UC Berkeley. 
-                    I'm seeking professional roles in AI/ML. My current personal 
-                    interests are in transformer-based modeling and agentic AI. 
+                    I'm a recent master's graduate from
+                    UT Austin and a data science graduate from UC Berkeley.
+                    I'm seeking professional roles in AI/ML. My current personal
+                    interests are in transformer-based modeling and agentic AI.
                     Check out my projects below!
                 </p>
             </div>
@@ -246,7 +286,6 @@
                         </div>
                     </div>
                 </a>
-
 
                 <a href="projects/minilora.html" class="project-card">
                     <div class="card-bg" style="background: linear-gradient(135deg, #FF4500, #ff8458)"></div>
